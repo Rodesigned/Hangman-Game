@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Hangman Game</title>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+<div class="container">
+  <header class="row">
+    <div class="col-md-12"> <img src="assets/images/header_game.png" alt="header-image" > </div>
+  </header>
+  <div class="row">
+    <div class="col-md-6">
+      <div id="game"> 
+        
+        <div class="start">
+          <h2>Press any key to start:</h2>
+        </div>
+        <!-- div tag to display the current playing word -->
+        <div id="word-div">
+          <h1>Current Word: </h1>
+          <h4 id="word-play"></h4>
+          <h4 id="winning-word"></h4>
+        </div>
+        <!-- div tag to display the wrong letters -->
+        <div id="wrong-guess">
+          <h1>Letters already guessed: </h1>
+          <h4 id="charset-wrong"></h4>
+        </div>
+        <br >
+        <!-- div tag to display the remaining number of guesses -->
+        <div id="num-remain">
+          <h1>Guesses remaining: <strong id="num-guesses"></strong></h1>
+        </div>
+        <br >
+        <!-- div tag to display wins and losses -->
+        <div id="game-status">
+          <div>
+            <h4 id="wins">Wins: </h4>
+          </div>
+          <br >
+          <div>
+            <h4 id="losses">Losses: </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- div tag for layout purposes -->
+    <div class="row records">
+      <div class="col-md-6"> 
+        <!-- div tag for changing images -->
+        <div id="ts-img"> 
+			<img class="record" src="assets/images/record.png" alt="record-image" > 
+		 </div>
+        <!-- div tag to display status of playing, win, or loss -->
+        <div id="status-is">
+          <p>You are playing this round.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="footer col-sm-12 bg-dark">
+  <p><span class="text-muted">&copy; Copyright Rosita Cabrera</span></p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script> 
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
